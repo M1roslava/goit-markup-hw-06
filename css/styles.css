@@ -289,6 +289,7 @@ margin-right: auto;
   top: 440px;
   transition-property: background-color;
   transition-duration: 250ms;
+  cursor: pointer;
   }
   .order-button:hover {
   text-decoration: underline var(--primary-accent-color);
@@ -366,7 +367,9 @@ position:absolute;
 top: 11px;
 left:12px;
 justify-items: center;
-transform: translateY(20px);
+transform: translateY(19px);
+transition-property:fill;
+transition-duration: 250ms;
 }
 .modal-label {
   color: #757575;
@@ -375,6 +378,8 @@ font-size: 12px;
 line-height: 1.16;
 letter-spacing: 0.01em;
 margin-bottom: 4px;
+transition-property:color;
+transition: transform 250ms var(--timing-function);
 }
 .modal-input {
 border: 1px solid rgba(33, 33, 33, 0.2);
@@ -388,20 +393,24 @@ width: 448px;
  color: var(--primary-accent-color);
  cursor: pointer;
 }
+.modal-input:hover> .modal-label {
+  color: var(--primary-accent-color);
+}
 .modal-label:hover,
-.modal-label:focus .modal-icons{
+.modal-label:focus> .modal-icons{
   color: var(--primary-accent-color);
   fill: var(--primary-accent-color);
   cursor: pointer;
 }
 .check-form {
-
-  font-weight:400;
+font-weight:400;
 font-size: 14px;
 line-height: 1.16px;
 letter-spacing: 0.03em;
 color: #757575;
 cursor: pointer;
+transition-property:color;
+transition: transform 250ms var(--timing-function);
 }
 .check-form:hover,
 .check-form:focus {
@@ -426,6 +435,8 @@ color: var(--primary-accent-color);
 background-color: var(--primary-accent-color);
 background-image: url('../images/full-check.svg');
 background-size: contain;
+transition-property: color;
+transition: transform 250ms var(--timing-function);
 }
 .button-form {
   margin-top: 30px;
@@ -446,9 +457,19 @@ background-size: contain;
 .form-field input {
   width: 100%;
   padding: 11px 12px;
+  padding-left: 42px;
 
 }
+.form-field:focus-within >.modal-icons{
+  fill: var(--primary-accent-color);
+}
+.form-field:hover .modal-icons {
+  fill: var(--primary-accent-color);
 
+}
+.form-field:hover >.modal-input{
+ color: #2196F3;
+}
 .form-field input::placeholder {
   font-size: 14px;
 line-height: 1.16;
@@ -492,10 +513,10 @@ padding:12px 16px;
   color:var(--main-bcg-color);
   top: 440px;
   transition-property: background-color;
-  transition-duration: 250ms;
+  transition: transform 250ms var(--timing-function);
   justify-items: center;
   align-items: center;
-
+  cursor: pointer;
   }
   
   .btn-send:hover {
@@ -778,7 +799,7 @@ margin-right: 0px;
     display:inline-block;
     flex-wrap: nowrap;
     transition-property:color;
-    transition-duration: 1250ms;
+    transition-duration: 250ms;
    
   }
   .net-list:hover,
