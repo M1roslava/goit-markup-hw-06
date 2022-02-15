@@ -51,12 +51,12 @@
         <p class="modal-text">Оставьте свои данные, мы вам перезвоним</p>
         <form class="js-modal-form">
         <div class="form-field">
-            
+            <label class="modal-label" for="name">Имя</label>
             <input class="modal-input" type="text" name="name" id="name"/>
             <svg class="modal-icons">
                 <use  href="./images/sprite.svg#icon-person"></use>
             </svg> 
-            <label class="modal-label" for="name">Имя</label>
+
         </div>
         <div class="form-field">
             <label  class="modal-label" for="tel">Телефон</label>
@@ -77,11 +77,12 @@
             <textarea class="modal-textarea" name="comment" id="name" placeholder="Введите текст"></textarea>
         
         </div>
-        <div class="check-form">
-            <input  class="modal-input" type="checkbox" name="" value="" id="agreement"/>
-            <label  class="modal-label" for="agreement">Соглашаюсь с рассылкой и принимаю 
-                <a  class="agreement-link" href="/">Условия договора</a></label>
-        </div>  
+        <label class="check-form">
+            <input  class="checkbox" type="checkbox" name="" value=""/>
+            <span class="checkbox-icon"></span>
+            Соглашаюсь с рассылкой и принимаю 
+                <a  class="agreement-link" href="/">Условия договора</a>
+            </label>  
 <div class="button-form">
 <button type="submit" class="btn-send">Отправить</button></div>
 
