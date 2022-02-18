@@ -329,8 +329,9 @@ padding: 40px;
 }
 .icon-close {
   width: 18px;
-height: 18px;
+  height: 18px;
   fill: #000000;
+  transition: fill 250ms var(--timing-function);
 }
 .modal-button {
   display:flex;
@@ -344,6 +345,8 @@ position:absolute;
 top:8px;
 right:8px;
 cursor: pointer;
+transition-property: fill;
+  transition: transform 1250ms var(--timing-function);
 }
 .modal-button:hover .icon-close {
   fill: var(--primary-accent-color);
@@ -379,7 +382,7 @@ line-height: 1.16;
 letter-spacing: 0.01em;
 margin-bottom: 4px;
 transition-property:color;
-transition: transform 250ms var(--timing-function);
+transition:  250ms var(--timing-function);
 }
 .modal-input {
 border: 1px solid rgba(33, 33, 33, 0.2);
@@ -410,7 +413,7 @@ letter-spacing: 0.03em;
 color: #757575;
 cursor: pointer;
 transition-property:color;
-transition: transform 250ms var(--timing-function);
+transition: 250ms var(--timing-function);
 display: flex;
 align-items: center;
 }
@@ -445,8 +448,8 @@ color: var(--primary-accent-color);
 background-color: var(--primary-accent-color);
 background-image: url('../images/full-check.svg');
 background-size: contain;
-transition-property: color;
-transition: transform 250ms var(--timing-function);
+transition-property:color;
+transition: 250ms var(--timing-function);
 border: none;
 }
 .button-form {
@@ -526,7 +529,9 @@ resize: none;
   color:var(--main-bcg-color);
   top: 440px;
   transition-property: background-color;
-  transition: transform 250ms var(--timing-function);
+  transition:  250ms var(--timing-function);
+  transition-property:color;
+transition: 250ms var(--timing-function);
   justify-items: center;
   align-items: center;
   cursor: pointer;
